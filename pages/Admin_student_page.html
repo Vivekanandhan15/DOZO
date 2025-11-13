@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students | DOZO Student Portal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="../css/admin_student_page.css">
+    <link rel="shortcut icon" href="../assests/Gemini_Generated_Image_12evsh12evsh12ev-removebg-preview (1).png" type="image/x-icon">
+</head>
+<body>
+    <div class="dashboard-layout">
+        <main class="main-content">
+            <header class="top-header">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search students..." class="search-input">
+                    <i class="fas fa-search search-icon"></i>
+                </div>
+            </header>
+
+
+            <div class="page-header">
+                <h2>All Students</h2>
+                <a href="../pages/Admin_page.html" style="margin-right: 999px; height: 20px; width: 50px;">Back</a>
+                <button class="btn btn-primary"><i class="fas fa-user-plus"></i> Add New Student</button>
+            </div>
+
+            <div class="student-filters">
+                <select class="filter-select">
+                    <option>All Batches</option>
+                    <option>Web Development - Batch A</option>
+                    <option>JavaScript - Batch B</option>
+                </select>
+                <select class="filter-select">
+                    <option>Filter by Status</option>
+                    <option>Active</option>
+                    <option>Inactive</option>
+                </select>
+            </div>
+
+            <div class="student-list-card">
+                <div class="list-header">
+                    <span class="header-col student-info-col">Student Name</span>
+                    <span class="header-col">Batch</span>
+                    <span class="header-col">Attendance Rate</span>
+                    <span class="header-col">Status</span>
+                    <span class="header-col actions-col">Actions</span>
+                </div>
+                
+                <div class="list-item">
+                    <div class="student-info-col">
+                        <div class="avatar avatar-a">V</div>
+                        <div>
+                            <span class="student-name">VIVEKANANDHAN</span>
+                            <span class="student-id">DOZO0012A</span>
+                        </div>
+                    </div>
+                    <span class="batch-col">Web Development - Batch A</span>
+                    <span class="attendance-col rate-high">94%</span>
+                    <span class="status-col status-active">Active</span>
+                    <span class="actions-col">
+                        <button class="icon-btn" title="View Profile"><i class="fas fa-eye"></i></button>
+                        <button class="icon-btn" title="Edit"><i class="fas fa-edit"></i></button>
+                    </span>
+                </div>
+
+                <div class="list-item">
+                    <div class="student-info-col">
+                        <div class="avatar avatar-b">S</div>
+                        <div>
+                            <span class="student-name">SHAMUEL</span>
+                            <span class="student-id">DOZO0025B</span>
+                        </div>
+                    </div>
+                    <span class="batch-col">JavaScript - Batch B</span>
+                    <span class="attendance-col rate-medium">86%</span>
+                    <span class="status-col status-active">Active</span>
+                    <span class="actions-col">
+                        <button class="icon-btn"><i class="fas fa-eye"></i></button>
+                        <button class="icon-btn"><i class="fas fa-edit"></i></button>
+                    </span>
+                </div>
+
+                <div class="list-item">
+                    <div class="student-info-col">
+                        <div class="avatar avatar-c">R</div>
+                        <div>
+                            <span class="student-name">RAGUL</span>
+                            <span class="student-id">DOZO0018C</span>
+                        </div>
+                    </div>
+                    <span class="batch-col">Advanced - Batch C</span>
+                    <span class="attendance-col rate-low">80%</span>
+                    <span class="status-col status-inactive">Inactive</span>
+                    <span class="actions-col">
+                        <button class="icon-btn"><i class="fas fa-eye"></i></button>
+                        <button class="icon-btn"><i class="fas fa-edit"></i></button>
+                    </span>
+                </div>
+
+                <div class="pagination">
+                    <span>Showing 1 to 10 of 45 students</span>
+                    <div>
+                        <button class="icon-btn"><i class="fas fa-chevron-left"></i></button>
+                        <button class="icon-btn active">1</button>
+                        <button class="icon-btn">2</button>
+                        <button class="icon-btn">3</button>
+                        <button class="icon-btn"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+
+</body>
+</html>

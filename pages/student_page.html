@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    <link rel="stylesheet" href="../css/student_page.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../assests/Gemini_Generated_Image_12evsh12evsh12ev-removebg-preview (1).png" type="image/x-icon">
+    <title>Student Page - DOZO</title>
+</head>
+<body>
+ <header class="header">
+  <a href="index.html" class="logo-link">
+    <img src="../assests/Gemini_Generated_Image_12evsh12evsh12ev-removebg-preview (1).png" alt="Logo" class="logo">
+  </a>
+
+  <nav class="Nav-bar">
+    <div class="nav-center">
+      <a href="#" class="navcom">Dashboard</a>
+      <a href="#Tasks" class="navcom">Tasks</a>
+      <a href="#Attandance" class="navcom">Attendance</a>
+      <a href="#" class="navcom">Progress</a>
+    </div>  
+
+    <div class="nav-right">
+      <a href="#" class="navcom">Profile</a>
+      <a href="#" class="navcom">Name</a>
+    </div>
+  </nav>
+</header>
+<section class="Mini-dashboard section-1">
+  <div class="main-div">
+    <div class="left-content">
+      <h2>Good Morning, Vivekanandhan P</h2>
+      <p>Ready to tackle today's learning goals? You have 4 pending tasks and 1 upcoming deadline.</p>
+    </div>
+    <div class="right-content">
+      <div class="info-box">
+        <h3>92%</h3>
+        <p>Attendance</p>
+      </div>
+      <div class="info-box">
+        <h3>15</h3>
+        <p>days Streak</p>
+      </div>
+      <div class="info-box">
+        <h3>A+</h3>
+        <p>Avg Grade</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="mini-access section-2">
+  <div class="mini-main-div">
+    <div class="left-mini">
+      <p><i class="fa-solid fa-calendar-days"></i> Next deadline: Math Assignment (2 days)</p>
+    </div>
+
+    <div class="right-mini">
+      <button class="btn submit-mini">
+        <i class="fa-solid fa-upload"></i> + Submit Task
+      </button>
+      <button class="btn leave-mini">
+        <i class="fa-solid fa-plane-departure"></i> Request Leave
+      </button>
+      <button class="btn download-report-mini">
+        <i class="fa-solid fa-download"></i> Download Report
+      </button>
+    </div>
+  </div>
+</section>
+<section class="quick-dashboard section-3">
+  <div class="card card-1">
+    <div class="card-header">
+      <div class="icon-box icon-blue">
+        <i class="fa-solid fa-list-check"></i>
+      </div>
+      <span class="badge badge-blue">Today</span>
+    </div>
+    <h2>4</h2>
+    <p>Pending Tasks</p>
+    <span class="sub-text success"><i class="fa-solid fa-arrow-up"></i> 2 submitted today</span>
+  </div>
+
+  <div class="card card-2">
+    <div class="card-header">
+      <div class="icon-box icon-green">
+        <i class="fa-solid fa-calendar-check"></i>
+      </div>
+      <span class="badge badge-green">This Month</span>
+    </div>
+    <h2>92%</h2>
+    <p>Attendance Rate</p>
+    <span class="sub-text success"><i class="fa-solid fa-check"></i> 23/25 days present</span>
+  </div>
+
+  <div class="card card-3">
+    <div class="card-header">
+      <div class="icon-box icon-purple">
+        <i class="fa-solid fa-chart-line"></i>
+      </div>
+      <span class="badge badge-purple">Overall</span>
+    </div>
+    <h2>87%</h2>
+    <p>Progress Score</p>
+    <span class="sub-text purple"><i class="fa-solid fa-trophy"></i> 15-day streak</span>
+  </div>
+
+  <div class="card card-4">
+    <div class="card-header">
+      <div class="icon-box icon-orange">
+        <i class="fa-solid fa-clock"></i>
+      </div>
+      <span class="badge badge-orange">Urgent</span>
+    </div>
+    <h2>3</h2>
+    <p>Upcoming Deadlines</p>
+    <span class="sub-text danger"><i class="fa-solid fa-triangle-exclamation"></i> Next in 2 days</span>
+  </div>
+</section>
+<section class="section-4" id="Tasks">
+  <div class="header-Tasks">
+    <div>
+      <h2>Today's Tasks</h2>
+      <p>Stay on track with your daily assignments</p>
+    </div>
+    <div class="task-filters">
+      <button class="active">All</button>
+      <button>Pending</button>
+      <button>Submitted</button>
+      <a href="#">View All</a>
+    </div>
+  </div>
+
+  <div class="task-grid">
+    <div class="task-card red">
+      <div class="task-top">
+        <div class="icon"><i class="fas fa-book"></i></div>
+        <span class="due">Due in 2 days</span>
+      </div>
+      <h3>Subject</h3>
+      <p class="sub">Topics etc..</p>
+      <p>brief</p>
+      <div class="task-info">
+        <span><i class="fas fa-stopwatch"></i> Estimate Time </span>
+        <span>Priority status</span>
+      </div>
+      <button class="start-btn">Start Task</button>
+    </div>
+
+    <div class="task-card blue">
+      <div class="task-top">
+        <div class="icon"><i class="fas fa-microscope"></i></div>
+        <span class="status">Submitted</span>
+      </div>
+      <h3>Subject</h3>
+      <p class="sub">Topics etc..</p>
+      <p>brief</p>
+      <div class="task-info">
+        <span><i class="fas fa-stopwatch"></i> Estimate Time </span>
+        <span>Priority status</span>
+      </div>
+      <button class="view-btn">View Submission</button>
+    </div>
+
+    <div class="task-card green">
+      <div class="task-top">
+        <div class="icon"><i class="fas fa-book"></i></div>
+        <span class="due yellow">Due in 5 days</span>
+      </div>
+      <h3>English Literature Essay</h3>
+      <p class="sub">Topics etc..</p>
+      <p>brief</p>
+      <div class="task-info">
+        <span><i class="fas fa-stopwatch"></i> Estimate Time</span>
+        <span>Priority status</span>
+      </div>
+      <button class="start-btn">Start Task</button>
+    </div>
+
+    <div class="task-card purple">
+      <div class="task-top">
+        <div class="icon"><i class="fas fa-globe"></i></div>
+        <span class="status purple-text">In Progress</span>
+      </div>
+      <h3>English Literature Essay</h3>
+      <p class="sub">Topics etc..</p>
+      <p>brief</p>
+      <div class="task-info">
+        <span><i class="fas fa-stopwatch"></i> Estimate Time</span>
+        <span>Priority status</span>
+      </div>
+      <button class="continue-btn">Continue</button>
+    </div>
+  </div>
+</section>
+
+<section class="attendance-section" id="Attandance">
+  <div class="attendance-header">
+    <h2>Attendance Calendar</h2>
+    <p>Track your daily attendance and leave status</p>
+  </div>
+
+  <div class="calendar-nav">
+    <button id="prevMonth">‹</button>
+    <h3 id="monthYear">November 2025</h3>
+    <button id="nextMonth">›</button>
+  </div>
+
+  <div class="calendar">
+    <div class="day-name">Sun</div>
+    <div class="day-name">Mon</div>
+    <div class="day-name">Tue</div>
+    <div class="day-name">Wed</div>
+    <div class="day-name">Thu</div>
+    <div class="day-name">Fri</div>
+    <div class="day-name">Sat</div>
+  </div>
+
+  <div class="calendar-days" id="calendarDays"></div>
+
+  <div class="calendar-legend">
+    <span class="legend present"></span> Present
+    <span class="legend absent"></span> Absent
+    <span class="legend leave"></span> Leave
+    <span class="legend today"></span> Today
+  </div>
+</section>
+<section class="attendance-stats-section" >
+  <!-- Attendance Stats -->
+  <div class="card attendance-stats">
+    <aside class="card-att-left">
+    <h3>Attendance Stats</h3>
+    <p>This Month <span class="percent">92%</span></p>
+    <div class="progress-bar">
+      <div class="progress-fill" style="width: 92%;"></div>
+    </div>
+    <div class="stats-summary">
+      <div class="present">
+        <h2>23</h2>
+        <p>Present</p>
+      </div>
+      <div class="absent">
+        <h2>2</h2>
+        <p>Absent</p>
+      </div>
+    </div>
+    </aside>
+  </div>
+
+  <!-- Leave Request -->
+  <div class="card leave-request">
+    <aside class="card-att-right">
+    <h3>Quick Leave Request</h3>
+    <form id="leaveForm">
+      <label for="leaveType">Leave Type</label>
+      <select id="leaveType" required>
+        <option value="Sick Leave">Sick Leave</option>
+        <option value="Casual Leave">Casual Leave</option>
+        <option value="Emergency Leave">Emergency Leave</option>
+      </select>
+
+      <label for="leaveDate">Date</label>
+      <input type="date" id="leaveDate" required />
+
+      <label for="leaveReason">Reason</label>
+      <textarea id="leaveReason" placeholder="Brief reason for leave..." required></textarea>
+
+      <button type="submit" class="btn-submit">Submit Request</button>
+    </form>
+    </aside>
+  </div>
+  <div class="card leave-requests">
+  <h3>Leave Requests</h3>
+  
+  <div class="leave-item pending">
+    <div>
+      <strong>Medical Appointment</strong>
+      <p>Nov 25, 2025</p>
+    </div>
+    <span class="status pending">Pending</span>
+  </div>
+
+  <div class="leave-item approved">
+    <div>
+      <strong>Sick Leave</strong>
+      <p>Nov 12, 2025</p>
+    </div>
+    <span class="status approved">Approved</span>
+  </div>
+</div>
+</section>
+
+<footer class="dozo-footer">
+  <div class="footer-container">
+    <!-- Brand Info -->
+    <div class="footer-brand">
+      <div class="brand-logo">
+     <img src="../assests/Gemini_Generated_Image_12evsh12evsh12ev-removebg-preview (1).png" alt="Logo" class="logo">
+        <h3>DOZO</h3>
+      </div>
+      <p class="brand-sub">Student Portal</p>
+      <p class="brand-desc">
+        Empowering students with comprehensive learning management and progress tracking tools.
+      </p>
+
+      <!-- <div class="social-links"> -->
+        <!-- <a href="#"><i class="fa-brands fa-facebook"></i></a> -->
+        <!-- <a href="#"><i class="fa-brands fa-twitter"></i></a> -->
+        <!-- <a href="#"><i class="fa-brands fa-instagram"></i></a> -->
+        <!-- <a href="#"><i class="fa-brands fa-linkedin"></i></a> -->
+      <!-- </div> -->
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-section">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#">Dashboard</a></li>
+        <li><a href="#">Tasks</a></li>
+        <li><a href="#">Attendance</a></li>
+        <li><a href="#">Progress Reports</a></li>
+        <li><a href="#">Communication</a></li>
+      </ul>
+    </div>
+
+    <!-- Support -->
+    <div class="footer-section">
+      <h4>Support</h4>
+      <ul>
+        <li><a href="#">Help Center</a></li>
+        <li><a href="#">Contact Support</a></li>
+        <li><a href="#">User Guide</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">System Status</a></li>
+      </ul>
+    </div>
+
+    <!-- Account -->
+    <div class="footer-section">
+      <h4>Account</h4>
+      <ul>
+        <li><a href="#">Profile Settings</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+        <!-- <li><a href="#">Academic Calendar</a></li> -->
+        <li><a href="../index.html" class="logout">Logout</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 DOZO Student Portal. All rights reserved.</p>
+    <p>Version 1.0 &nbsp; | &nbsp; Last login: -- </p>
+  </div>
+</footer>
+
+
+</body>
+</html>

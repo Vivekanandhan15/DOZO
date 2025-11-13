@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Profile Settings | DOZO</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="../css/student_profile.css"> 
+    <link rel="shortcut icon" href="../assests/Gemini_Generated_Image_12evsh12evsh12ev-removebg-preview (1).png" type="image/x-icon">
+</head>
+<body>
+
+    <div class="settings-page-container">
+        <div class="profile-header">
+            <h2 class="page-title"><i class="fas fa-user-cog"></i> Admin Profile Settings</h2>
+            <p class="role-display">Role: <span id="userRole">Lead Instructor</span></p>
+        </div>
+
+        <div class="settings-card">
+            
+            <div class="profile-overview">
+                <div class="avatar-large avatar-admin">V</div>
+                <div class="profile-details">
+                    <span class="user-name">ANISHA FATHIMA</span>
+                    <span class="user-email">anisha.fathima@dozo.edu</span>
+                    <span class="user-id">EMP ID: DOZOEMP001</span>
+                </div>
+            </div>
+            
+            <hr class="section-divider">
+
+            <div class="settings-tabs">
+                <button class="tab-button active" data-tab="general"><i class="fas fa-id-card"></i> Personal Info</button>
+                <button class="tab-button" data-tab="employment"><i class="fas fa-briefcase"></i> Employment Details</button>
+                <button class="tab-button" data-tab="security"><i class="fas fa-lock"></i> Security</button>
+            </div>
+
+            <div class="tab-content active" id="general">
+                <h3 class="tab-title">Contact & Personal Information</h3>
+                <form class="settings-form">
+                    <div class="form-group">
+                        <label for="fullName">Full Name</label>
+                        <input type="text" id="fullName" value="ANISHA FATHIMA" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Work Phone Number</label>
+                        <input type="tel" id="phone" value="+91 90000 12345">
+                    </div>
+                    <div class="form-group">
+                        <label for="homeAddress">Residential Address</label>
+                        <input type="text" id="homeAddress" placeholder="Address">
+                    </div>
+                    <div class="form-group">
+                        <label for="emergencyContact">Emergency Contact</label>
+                        <input type="tel" id="emergencyContact" value="+91 9999999999">
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary"><i class="fas fa-save"></i> Save Personal Info</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="tab-content" id="employment">
+                <h3 class="tab-title">Role & System Details</h3>
+                <div class="info-grid">
+                    <div class="info-stat">
+                        <span class="stat-label"><i class="fas fa-user-tie"></i> Primary Role</span>
+                        <span class="stat-value">Lead Instructor</span>
+                    </div>
+                    <div class="info-stat">
+                        <span class="stat-label"><i class="fas fa-building"></i> Department</span>
+                        <span class="stat-value">Technology Education</span>
+                    </div>
+                     <div class="info-stat">
+                        <span class="stat-label"><i class="fas fa-calendar-alt"></i> Date of Joining</span>
+                        <span class="stat-value">Mar 10, 2022</span>
+                    </div>
+                    <div class="info-stat">
+                        <span class="stat-label"><i class="fas fa-cogs"></i> System Access Level</span>
+                        <span class="stat-value rate-admin">Full Admin Access</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="security">
+                <h3 class="tab-title">Change Password</h3>
+                <form class="settings-form">
+                    <div class="form-group">
+                        <label for="currentPassword">Current Password</label>
+                        <input type="password" id="currentPassword" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="newPassword">New Password</label>
+                        <input type="password" id="newPassword" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirmPassword">Confirm New Password</label>
+                        <input type="password" id="confirmPassword" required>
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary"><i class="fas fa-key"></i> Update Password</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabs = document.querySelectorAll('.tab-button');
+            const contents = document.querySelectorAll('.tab-content');
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    const targetId = tab.getAttribute('data-tab');
+                    tabs.forEach(t => t.classList.remove('active'));
+                    contents.forEach(c => c.classList.remove('active'));
+                    tab.classList.add('active');
+                    document.getElementById(targetId).classList.add('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../assests/Gemini_Generated_Image_12evsh12evsh12ev-removebg-preview (1).png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/admin.css">
+    <title>Admin Page - DOZO</title>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-left">
+      <img src="../assests/Gemini_Generated_Image_12evsh12evsh12ev-removebg-preview (1).png" height="80px" width="80px" style="margin-top: 15px;" alt="">
+    </div>
+    <div class="nav-right">
+      <h2 style="margin-right: 400px;">DOZO - Admin Portal</h2>
+      <div class="search-box">
+        <i class="fa fa-search"></i>
+        <input type="text" placeholder="Search students" />
+      </div>
+      <!-- <i class="fa fa-bell"></i>
+      <img src="" alt="Profile" class="profile-img" />
+    </div> -->
+  </nav>
+
+
+  <aside class="sidebar">
+    <div class="sidebar-section">
+      <h3 class="sidebar-title">MAIN MENU</h3>
+      <a href="#" class="menu-item active"><i class="fa fa-chart-line"></i> Dashboard</a>
+      <a href="#Tasks" class="menu-item"><i class="fa fa-tasks"></i> Tasks</a>
+      <a href="../pages/attandance.html" class="menu-item"><i class="fa fa-calendar-check"></i> Attendance</a>
+      <a href="../pages/Admin_student_page.html" class="menu-item"><i class="fa fa-users"></i> Students</a>
+      <!-- <a href="#" class="menu-item"><i class="fa fa-chart-pie"></i> Reports</a> -->
+    </div>
+  </aside>
+
+ 
+  <main class="main-content">
+    <section class="dashboard">
+      <div class="welcome-section">
+        <div>
+          <h1 class="welcome-title">Welcome back, ANISHA FATHIMA </h1>
+          <p class="welcome-subtitle">Here's what's happening with your students today</p>
+        </div>
+        <div class="welcome-buttons">
+          <button class="btn-primary">+ Create Task</button>
+          <button class="btn-outline"><i class="fa fa-calendar-check"></i> Mark Attendance</button>
+        </div>
+      </div>
+
+      <div class="stats-section">
+        <div class="stat-card">
+          <div class="stat-icon blue"><i class="fa fa-list"></i></div>
+          <h2 class="stat-value">24</h2>
+          <p class="stat-label">Active Tasks</p>
+          <p class="stat-change positive">+12% from last week</p>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-icon green"><i class="fa fa-user-check"></i></div>
+          <h2 class="stat-value">89%</h2>
+          <p class="stat-label">Attendance Rate</p>
+          <p class="stat-change positive">+3% from yesterday</p>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-icon purple"><i class="fa fa-chart-line"></i></div>
+          <h2 class="stat-value">76%</h2>
+          <p class="stat-label">Avg. Performance</p>
+          <p class="stat-change negative">-2% needs attention</p>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-icon orange"><i class="fa fa-clock"></i></div>
+          <h2 class="stat-value">7</h2>
+          <p class="stat-label">Pending Reviews</p>
+          <p class="stat-change urgent">Urgent action needed</p>
+        </div>
+      </div>
+    </section>
+
+<section class="schedule-section">
+  <div class="schedule-left">
+    <div class="schedule-header">
+      <h2>Today's Schedule</h2>
+      <a href="#" class="view-all">View All</a>
+    </div>
+    <div class="schedule-list">
+      <div class="schedule-item">
+        <div class="schedule-info">
+          <div class="icon blue"><i class="fa fa-laptop"></i></div>
+          <div>
+            <h3>Web Development - Batch A</h3>
+            <p>Room 101 • 32 students</p>
+          </div>
+        </div>
+        <div class="schedule-time">
+          <h4>9:00 - 11:00 AM</h4>
+          <p class="status in-progress">In Progress</p>
+        </div>
+      </div>
+      <div class="schedule-item">
+        <div class="schedule-info">
+          <div class="icon green"><i class="fa fa-code"></i></div>
+          <div>
+            <h3>JavaScript Fundamentals - Batch B</h3>
+            <p>Room 203 • 28 students</p>
+          </div>
+        </div>
+        <div class="schedule-time">
+          <h4>2:00 - 4:00 PM</h4>
+          <p class="status upcoming">Upcoming</p>
+        </div>
+      </div>
+
+      <div class="schedule-item">
+        <div class="schedule-info">
+          <div class="icon purple"><i class="fa fa-users"></i></div>
+          <div>
+            <h3>Mentorship Session - Advanced</h3>
+            <p>Online • 15 students</p>
+          </div>
+        </div>
+        <div class="schedule-time">
+          <h4>5:00 - 6:00 PM</h4>
+          <p class="status scheduled">Scheduled</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="schedule-right">
+    <h2>Quick Actions</h2>
+    <button class="action-btn primary"><i class="fa fa-plus"></i> Create New Task</button>
+    <button class="action-btn"><i class="fa fa-calendar-check"></i> Mark Attendance</button>
+    <button class="action-btn"><i class="fa fa-bullhorn"></i> Post Announcement</button>
+    <button class="action-btn"><i class="fa fa-file-export"></i> Generate Report</button>
+  </div>
+</section>
+
+<section class="task-management-section" id="Tasks">
+  <div class="task-header">
+    <h2>Task Management</h2>
+    <div class="task-actions">
+      <select class="batch-select">
+        <option>All Batches</option>
+        <option>Batch A</option>
+        <option>Batch B</option>
+        <option>Batch C</option>
+      </select>
+      <button class="create-task-btn">
+        <i class="fa fa-plus"></i> Create Task
+      </button>
+    </div>
+  </div>
+
+  <div class="task-stats">
+    <div class="task-card">
+      <div class="task-icon blue"><i class="fa fa-list"></i></div>
+      <div>
+        <h3>Total Tasks</h3>
+        <h1>47</h1>
+        <p>Active assignments</p>
+      </div>
+    </div>
+
+    <div class="task-card">
+      <div class="task-icon orange"><i class="fa fa-clock"></i></div>
+      <div>
+        <h3>Pending Review</h3>
+        <h1 class="orange-text">12</h1>
+        <p>Need attention</p>
+      </div>
+    </div>
+
+    <div class="task-card">
+      <div class="task-icon green"><i class="fa fa-check-circle"></i></div>
+      <div>
+        <h3>Completed</h3>
+        <h1 class="green-text">134</h1>
+        <p>This month</p>
+      </div>
+    </div>
+
+    <div class="task-card">
+      <div class="task-icon red"><i class="fa fa-exclamation-triangle"></i></div>
+      <div>
+        <h3>Overdue</h3>
+        <h1 class="red-text">5</h1>
+        <p>Require action</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="task-board-container">
+  <div class="task-board-header">
+    <h2>Recent Tasks</h2>
+    <div class="task-board-actions">
+      <input type="text" id="taskSearchInput" placeholder="Search tasks..." />
+      <button class="task-filter-btn">Filter</button>
+    </div>
+  </div>
+  <table class="task-table">
+    <thead>
+      <tr>
+        <th>Task Name</th>
+        <th>Batch</th>
+        <th>Due Date</th>
+        <th>Submissions</th>
+        <th>Status</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <div class="task-info">
+            <span class="task-icon blue-icon"><i class="fa fa-laptop"></i></span>
+            <div>
+              <strong>React Component Design</strong>
+              <p>Build reusable components</p>
+            </div>
+          </div>
+        </td>
+        <td>Batch A</td>
+        <td>Dec 15, 2025</td>
+        <td>28/32</td>
+        <td><span class="status-tag active-status">Active</span></td>
+        <td class="task-actions">
+          <button class="action-btn view-btn"><i class="fas fa-eye"></i></button>
+          <button class="action-btn done-btn"><i class="fas fa-check"></i></button>
+          <button class="action-btn menu-btn">⋯</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="task-info">
+            <span class="task-icon purple-icon"><i class="fas fa-save"></i></span>
+            <div>
+              <strong>Database Design Project</strong>
+              <p>Create normalized schema</p>
+            </div>
+          </div>
+        </td>
+        <td>Batch B</td>
+        <td class="due-overdue">Dec 12, 2025</td>
+        <td>15/28</td>
+        <td><span class="status-tag overdue-status">Overdue</span></td>
+        <td class="task-actions">
+          <button class="action-btn view-btn"><i class="fas fa-eye"></i></button>
+          <button class="action-btn alert-btn"><i class="fas fa-exclamation-triangle"></i></button>
+          <button class="action-btn menu-btn">⋯</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="task-info">
+            <span class="task-icon green-icon"><i class="fas fa-mobile-alt"></i></span>
+            <div>
+              <strong>Mobile App Wireframes</strong>
+              <p>Design user interface mockups</p>
+            </div>
+          </div>
+        </td>
+        <td>Advanced</td>
+        <td>Dec 20, 2025</td>
+        <td>8/15</td>
+        <td><span class="status-tag progress-status">In Progress</span></td>
+        <td class="task-actions">
+          <button class="action-btn view-btn"><i class="fas fa-eye"></i></button>
+          <button class="action-btn done-btn"><i class="fas fa-check"></i></button>
+          <button class="action-btn menu-btn">⋯</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+<section class="attendance-overview-container">
+  <div class="attendance-header">
+    <h2>Attendance Management</h2>
+    <div class="attendance-controls">
+      <select id="attendanceDaySelector">
+        <option>Today</option>
+        <option>Yesterday</option>
+        <option>This Week</option>
+      </select>
+      <button class="attendance-mark-btn"><i class="fas fa-check-square"></i> Mark Attendance</button>
+    </div>
+  </div>
+  <div class="attendance-summary-section">
+    <div class="summary-card present-summary">
+      <div class="summary-icon green-bg"><i class="fas fa-user"></i></div>
+      <div class="summary-details">
+        <h3>Present Today</h3>
+        <p>67 out of 75 students</p>
+      </div>
+      <div class="summary-stats">
+        <h2>89%</h2>
+        <p>Overall Rate</p>
+        <div class="progress-bar-container">
+          <div class="progress-bar-fill"></div>
+        </div>
+      </div>
+    </div>
+    <div class="summary-card absent-summary">
+      <div class="summary-icon red-bg"><i class="fas fa-times"></i></div>
+      <div class="summary-details">
+        <h3>Absent Today</h3>
+        <p>5 unexcused<br>3 on leave</p>
+      </div>
+      <div class="summary-stats">
+        <h2>8</h2>
+        <p>Students</p>
+      </div>
+    </div>
+    <div class="summary-card leave-summary">
+      <div class="summary-icon yellow-bg"><i class="fas fa-clock"></i></div>
+      <div class="summary-details">
+        <h3>Leave Requests</h3>
+        <p>Awaiting approval</p>
+      </div>
+      <div class="summary-stats">
+        <h2>3</h2>
+        <p>Pending</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="batch-leave-container">
+
+  <div class="batch-section">
+    <h2 class="batch-section-title">Batch-wise Attendance</h2>
+    <div class="batch-list">
+      <div class="batch-item blue-bg">
+        <div class="batch-left">
+          <div class="batch-icon">A</div>
+          <div>
+            <h3>Web Development - Batch A</h3>
+            <p>32 students</p>
+          </div>
+        </div>
+        <div class="batch-right">
+          <h3 class="attendance-percentage green-text">94%</h3>
+          <p>30/32 present</p>
+        </div>
+      </div>
+      <div class="batch-item green-bg">
+        <div class="batch-left">
+          <div class="batch-icon">B</div>
+          <div>
+            <h3>JavaScript - Batch B</h3>
+            <p>28 students</p>
+          </div>
+        </div>
+        <div class="batch-right">
+          <h3 class="attendance-percentage green-text">86%</h3>
+          <p>24/28 present</p>
+        </div>
+      </div>
+      <div class="batch-item purple-bg">
+        <div class="batch-left">
+          <div class="batch-icon">C</div>
+          <div>
+            <h3>Advanced - Batch C</h3>
+            <p>15 students</p>
+          </div>
+        </div>
+        <div class="batch-right">
+          <h3 class="attendance-percentage orange-text">80%</h3>
+          <p>12/15 present</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="leave-section">
+    <h2 class="leave-section-title">Leave Requests</h2>
+    <div class="leave-card yellow-bg">
+      <div class="leave-left">
+        <img src="" alt="Vivek" class="leave-avatar">
+        <div>
+          <h3>VIVEKANANDHAN </h3>
+          <p>Medical appointment</p>
+        </div>
+      </div>
+      <div class="leave-actions">
+        <button class="btn-approve">Approve</button>
+        <button class="btn-reject">Reject</button>
+      </div>
+    </div>
+    <div class="leave-card yellow-bg">
+      <div class="leave-left">
+        <img src="" alt="sham" class="leave-avatar">
+        <div>
+          <h3>SHAMUEL</h3>
+          <p>Family emergency</p>
+        </div>
+      </div>
+      <div class="leave-actions">
+        <button class="btn-approve">Approve</button>
+        <button class="btn-reject">Reject</button>
+      </div>
+    </div>
+    <div class="leave-card green-bg">
+      <div class="leave-left">
+        <img src="" alt="ragul" class="leave-avatar">
+        <div>
+          <h3>RAGUL</h3>
+          <p>Approved - Dec 10</p>
+        </div>
+      </div>
+      <div class="leave-actions">
+        <button class="btn-approved">Approved</button>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="communication-header">
+  <h2 class="comm-title">Communication Hub</h2>
+  <button class="comm-btn">
+    <span class="comm-icon"><i class="fas fa-bullhorn"></i></span>
+    New Announcement
+  </button>
+</section>
+<section class="recent-announcements">
+  <div class="announcements-header">
+    <h2>Recent Announcements</h2>
+    <a href="#" class="view-all">View All</a>
+  </div>
+  <div class="announcement-card blue-border">
+    <div class="announcement-content">
+      <div class="announcement-header">
+        <h3>Assignment Deadline Extension</h3>
+        <span class="time">2 hours ago</span>
+      </div>
+      <p>The deadline for React Component Design assignment has been extended to December 18th due to technical difficulties.</p>
+      <div class="announcement-meta">
+        <span><i class="fas fa-users"></i> Batch A, B</span>
+        <span><i class="fas fa-eye"></i> 45 views</span>
+      </div>
+    </div>
+  </div>
+  <div class="announcement-card green-border">
+    <div class="announcement-content">
+      <div class="announcement-header">
+        <h3>Guest Lecture Tomorrow</h3>
+        <span class="time">1 day ago</span>
+      </div>
+      <p>Industry expert ANISHA FATHIMA will be conducting a special session on "Modern Web Architecture" tomorrow at 3 PM.</p>
+      <div class="announcement-meta">
+        <span><i class="fas fa-users"></i> All Batches</span>
+        <span><i class="fas fa-eye"></i> 67 views</span>
+      </div>
+    </div>
+  </div>
+  <div class="announcement-card yellow-border">
+    <div class="announcement-content">
+      <div class="announcement-header">
+        <h3>Holiday Schedule Update</h3>
+        <span class="time">3 days ago</span>
+      </div>
+      <p>Classes will be suspended from December 23rd to January 2nd for the winter holidays. Make sure to complete pending assignments.</p>
+      <div class="announcement-meta">
+        <span><i class="fas fa-users"></i> All Students</span>
+        <span><i class="fas fa-eye"></i> 89 views</span>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="profile-settings">
+  <div class="settings-header">
+    <h2>Profile Settings</h2>
+    <button class="save-btn"><i class="fas fa-save"></i> Save Changes</button>
+  </div>
+  <div class="settings-container">
+    <div class="left-panel">
+
+      <div class="card">
+        <h3>Personal Information</h3>
+        <div class="form-row">
+          <div class="form-group">
+            <label>First Name</label>
+            <input type="text" value="Sarah">
+          </div>
+          <div class="form-group">
+            <label>Last Name</label>
+            <input type="text" value="Johnson">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Email Address</label>
+            <input type="email" value="VIVEK@GMAIL.COM">
+          </div>
+          <div class="form-group">
+            <label>Phone Number</label>
+            <input type="text" value="+91 9585840352">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Bio</label>
+          <textarea rows="3">Senior mentor with 8+ years of experience in web development and software engineering. Passionate about teaching modern technologies and helping students achieve their career goals.</textarea>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Professional Information</h3>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Department</label>
+            <select>
+              <option>Computer Science</option>
+              <option>Information Technology</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Position</label>
+            <input type="text" value="Senior Mentor">
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <div class="right-panel">
+        <div class="card profile-pic-card">
+          <h3>Profile Picture</h3>
+          <img src="" alt="Profile" class="profile-img">
+          <button class="change-photo-btn">📷 Change Photo</button>
+          <p class="file-info">JPG, PNG or GIF (max. 2MB)</p>
+        </div>
+        <div class="card security-card">
+          <h3>Security</h3>
+          <div class="security-option">
+            <span><i class="fas fa-key"></i> Change Password</span>
+            <span>›</span>
+            </div>
+          <!-- <div class="security-option">
+            <span>🛡️ Two-Factor Auth</span>
+          <span class="enabled">Enabled</span>
+        </div> -->
+      </div>
+    </div>
+  </div>
+</section>
+<footer>
+    <div class="footer-container">
+        <div class="footer-col brand-col">
+            <div class="logo-area">
+                <img src="../assests/Gemini_Generated_Image_12evsh12evsh12ev-removebg-preview (1).png" alt="DOZO Logo" class="logo">
+                <div>
+                    <div class="brand-name">DOZO</div>
+                    <div class="tagline">Student Portal</div>
+                </div>
+            </div>
+            <p class="description">
+                Empowering students with comprehensive learning management and progress tracking tools.
+            </p>
+            <div class="social-links">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-col">
+            <h3 class="col-title">Quick Links</h3>
+            <ul class="footer-links">
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Tasks</a></li>
+                <li><a href="#">Attendance</a></li>
+                <li><a href="#">Progress Reports</a></li>
+                <li><a href="#">Communication</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h3 class="col-title">Support</h3>
+            <ul class="footer-links">
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">Contact Support</a></li>
+                <li><a href="#">User Guide</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">System Status</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h3 class="col-title">Account</h3>
+            <ul class="footer-links">
+                <li><a href="#">Profile Settings</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Academic Calendar</a></li>
+                <li><a href="../index.html" class="logout-link" style="color: red;">Logout</a></li>
+            </ul>
+        </div>
+    </div>
+    <hr class="footer-divider">
+    <div class="footer-bottom">
+        <p class="copyright">&copy; 2024 DOZO Student Portal. All rights reserved.</p>
+        <div class="version-info">
+            <span class="version">Version 2.1.0</span>
+            <span class="last-login">Last login: Nov 23, 2024 at 9:15 AM</span>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark Attendance | DOZO</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="../css/attandance.css">
+    <link rel="shortcut icon" href="../assests/Gemini_Generated_Image_12evsh12evsh12ev-removebg-preview (1).png" type="image/x-icon">
+</head>
+<body>
+    <div class="attendance-page-container">
+        <header class="attendance-header">
+            <a href="../pages/Admin_page.html" class="back-link"><i class="fas fa-arrow-left"></i> Back</a>
+            <h2 class="page-title">Mark Attendance: Web Development - Batch A</h2>
+            <div class="date-selector">
+                <label for="attendance-date">Date:</label>
+                <input type="date" id="attendance-date" value="2025-11-13">
+            </div>
+        </header>
+        <form class="attendance-form" id="markAttendanceForm">
+            <div class="attendance-list-header">
+                <span class="student-name-col">Student Name</span>
+                <span class="status-col">
+                    Status
+                    <button type="button" class="mark-all-btn" data-status="present"><i class="fas fa-check"></i> Mark All Present</button>
+                </span>
+                <span class="note-col">Notes (Optional)</span>
+            </div>
+            <div class="student-item">
+                <span class="student-name-col">1. VIVEKANANDHAN</span>
+                <div class="status-col status-controls">
+                    <input type="radio" id="vivek-present" name="vivek-status" value="present" checked>
+                    <label for="vivek-present" class="present">Present</label>
+
+                    <input type="radio" id="vivek-absent" name="vivek-status" value="absent">
+                    <label for="vivek-absent" class="absent">Absent</label>
+                </div>
+                <input type="text" class="note-col student-note" placeholder="E.g., Late by 10 mins">
+            </div>
+            <div class="student-item">
+                <span class="student-name-col">2. SHAMUEL</span>
+                <div class="status-col status-controls">
+                    <input type="radio" id="shamu-present" name="shamu-status" value="present" checked>
+                    <label for="shamu-present" class="present">Present</label>
+
+                    <input type="radio" id="shamu-absent" name="shamu-status" value="absent">
+                    <label for="shamu-absent" class="absent">Absent</label>
+                </div>
+                <input type="text" class="note-col student-note" placeholder="E.g., Leave due to illness">
+            </div>
+
+             <div class="student-item">
+                <span class="student-name-col">3. RAGUL</span>
+                <div class="status-col status-controls">
+                    <input type="radio" id="ragul-present" name="ragul-status" value="present">
+                    <label for="ragul-present" class="present">Present</label>
+
+                    <input type="radio" id="ragul-absent" name="ragul-status" value="absent" checked>
+                    <label for="ragul-absent" class="absent">Absent</label>
+                </div>
+                <input type="text" class="note-col student-note" value="Approved Dec 10 Leave" readonly>
+            </div>
+            
+            <div class="form-actions">
+                <button type="submit" class="btn btn-primary">Save Attendance</button>
+                <button type="button" class="btn btn-secondary">Cancel</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
