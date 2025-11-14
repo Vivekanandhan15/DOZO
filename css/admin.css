@@ -213,7 +213,7 @@ body {
 .negative { color: #dc2626; }
 .urgent { color: #f97316; }
 
-/* ===== SECTION 2: SCHEDULE ===== */
+/*  SECTION 2: SCHEDULE */
 .schedule-section {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -901,9 +901,15 @@ body {
   background: #fafafa;
 }
 
-.blue-border { border-color: #2563eb; }
-.green-border { border-color: #16a34a; }
-.yellow-border { border-color: #eab308; }
+.blue-border { 
+  border-color: #2563eb; 
+}
+.green-border { 
+  border-color: #16a34a;
+ }
+.yellow-border {
+   border-color: #eab308; 
+  }
 
 .announcement-header {
   display: flex;
@@ -1027,7 +1033,6 @@ input, textarea, select {
   padding: 10px 12px;
   font-size: 0.9rem;
   color: #111827;
-  outline: none;
   width: 100%;
 }
 input:focus, textarea:focus, select:focus {
