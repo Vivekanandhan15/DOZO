@@ -235,7 +235,6 @@ body {
 .rate-high { color: var(--success-color); }
 .hidden { display: none !important; }
 
-/* --- Responsive Adjustments --- */
 @media (max-width: 600px) {
     .settings-page-container {
         margin: 0;
@@ -283,7 +282,7 @@ body {
     }
 
     .settings-form {
-        grid-template-columns: 1fr; /* Single column layout for forms */
+        grid-template-columns: 1fr; 
         gap: 15px;
     }
 
