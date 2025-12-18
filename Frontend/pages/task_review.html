@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Review - DOZO Admin</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="shortcut icon" href="/static/assets/logo.png"
+        type="image/x-icon">
+    <link rel="stylesheet" href="/static/css/admin.css"> <!-- Reusing admin styles -->
+    <style>
+        .review-container {
+            padding: 2rem;
+        }
+
+        .submission-card {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .submission-info h3 {
+            margin: 0 0 5px 0;
+            color: #333;
+        }
+
+        .submission-info p {
+            margin: 0;
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .grade-input {
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            width: 60px;
+            margin-right: 10px;
+        }
+
+        .feedback-input {
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            width: 250px;
+            margin-right: 10px;
+        }
+
+        .btn-grade {
+            background: #4ecdc4;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .btn-grade:hover {
+            background: #45b7af;
+        }
+
+        .file-link {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .file-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-left">
+            <img src="/static/assets/logo.png" height="50"
+                alt="Logo">
+        </div>
+        <div class="nav-right">
+            <h2>Task Review Portal</h2>
+            <a href="/admin" style="color: #666; text-decoration: none; margin-left: 20px;"><i class="fas fa-home"></i>
+                Dashboard</a>
+        </div>
+    </nav>
+
+    <div class="review-container">
+        <header style="margin-bottom: 2rem; display: flex; justify-content: space-between; align-items: center;">
+            <h1>Student Submissions</h1>
+            <div class="filters">
+                <select id="batchFilter" style="padding: 8px; border-radius: 6px; border: 1px solid #ddd;">
+                    <option value="all">All Batches</option>
+                    <!-- Options populated dynamically -->
+                </select>
+            </div>
+        </header>
+
+        <div id="submissionsList">
+            <!-- Submissions injected here -->
+            <p style="text-align: center; color: #888;">Loading submissions...</p>
+        </div>
+    </div>
+
+    <script src="/static/js/task_review.js"></script>
+</body>
+
+</html>

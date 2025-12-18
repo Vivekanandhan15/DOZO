@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Add Student | DOZO</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <link rel="shortcut icon" href="/static/assets/logo.png"
+    type="image/x-icon">
+  <link rel="stylesheet" href="/static/css/add_studnet.css">
+</head>
+
+<body>
+
+  <div class="card">
+    <h2><i class="fas fa-user-plus"></i> Add New Student</h2>
+
+    <form id="addStudentForm">
+      <div class="form-group">
+        <label>Student Name</label>
+        <input type="text" id="studentName" required>
+      </div>
+
+      <div class="form-group">
+        <label>Email</label>
+        <input type="email" id="studentEmail" required>
+      </div>
+
+      <div class="form-group">
+        <label>Batch</label>
+        <select id="studentBatch" required>
+          <option value="">Select Batch</option>
+          <option>Web Development - Batch A</option>
+          <option>JavaScript - Batch B</option>
+          <option>Advanced - Batch C</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Status</label>
+        <select id="studentStatus">
+          <option>Active</option>
+          <option>Inactive</option>
+        </select>
+      </div>
+
+      <div class="actions">
+        <button type="button" class="btn-secondary" onclick="window.history.back()">Cancel</button>
+        <button type="submit" class="btn-primary">Add Student</button>
+      </div>
+    </form>
+  </div>
+
+  <script src="/static/js/add_student.js?v=2"></script>
+</body>
+
+</html>

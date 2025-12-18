@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batch Management - DOZO</title>
+
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/static/assets/logo.png"
+        type="image/x-icon">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/static/css/batch_management.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="/admin" class="back-link">
+            <i class="fas fa-arrow-left"></i> Back to Admin
+        </a>
+        <h1>Batch Management</h1>
+    </header>
+
+    <div class="container">
+        <div class="top-bar">
+            <h2>All Batches</h2>
+            <button class="btn-primary" id="createBatchBtn">
+                <i class="fas fa-plus"></i> Create New Batch
+            </button>
+        </div>
+
+        <div class="batches-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Batch ID</th>
+                        <th>Batch Name</th>
+                        <th>Teacher ID</th>
+                        <th>Start Date</th>
+                        <th>End Date</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="batchesTableBody">
+                    <!-- Batches will be loaded here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Create/Edit Modal -->
+    <div id="batchModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modalTitle">Create New Batch</h3>
+                <span class="close">&times;</span>
+            </div>
+
+            <form id="batchForm">
+                <input type="hidden" id="batchId">
+
+                <div class="form-group">
+                    <label for="batchName">Batch Name *</label>
+                    <input type="text" id="batchName" required placeholder="e.g. Batch 2024-A">
+                </div>
+
+                <div class="form-group">
+                    <label for="teacherId">Teacher ID *</label>
+                    <input type="number" id="teacherId" required placeholder="Enter teacher ID">
+                </div>
+
+                <div class="form-group">
+                    <label for="startDate">Start Date *</label>
+                    <input type="date" id="startDate" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="endDate">End Date *</label>
+                    <input type="date" id="endDate" required>
+                </div>
+
+                <div class="modal-actions">
+                    <button type="button" class="btn-secondary" id="cancelBtn">Cancel</button>
+                    <button type="submit" class="btn-primary">Save Batch</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="/static/js/batch_management.js"></script>
+</body>
+
+</html>

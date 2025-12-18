@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOZO – Login</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="/static/assets/logo.png"
+    type="image/x-icon">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body>
+
+  <h2>DOZO – The Do Zone</h2>
+
+  <div class="container" id="container">
+
+    <!-- SIGN UP -->
+    <div class="form-container sign-up-container">
+      <form id="signUpForm">
+        <h1>Create Account</h1>
+
+        <div class="social-container">
+          <a href="#" class="social">
+            <i class="fab fa-google-plus-g"></i>
+          </a>
+        </div>
+
+        <span>or use your email for registration</span>
+
+        <input type="text" id="signupName" placeholder="Name" required>
+        <input type="email" id="signupEmail" placeholder="Email" required>
+        <input type="password" id="signupPassword" placeholder="Password" required>
+
+        <button type="submit">Sign Up</button>
+      </form>
+    </div>
+
+    <!-- SIGN IN -->
+    <div class="form-container sign-in-container">
+      <form id="signInForm">
+        <h1>Sign In</h1>
+
+        <div class="social-container">
+          <a href="#" class="social">
+            <i class="fab fa-google-plus-g"></i>
+          </a>
+        </div>
+
+        <span>or use your account</span>
+
+        <input type="email" id="signinEmail" placeholder="Email" required>
+        <input type="password" id="signinPassword" placeholder="Password" required>
+
+        <a href="/forgot-password">Forgot your password?</a>
+
+        <button type="submit">Sign In</button>
+      </form>
+    </div>
+
+    <!-- OVERLAY -->
+    <div class="overlay-container">
+      <div class="overlay">
+
+        <div class="overlay-panel overlay-left">
+          <h1>Welcome Back!</h1>
+          <p>To keep connected with us please login with your personal info</p>
+          <button class="ghost" id="signIn">Sign In</button>
+        </div>
+
+        <div class="overlay-panel overlay-right">
+          <h1>Hello, Friend!</h1>
+          <p>Enter your personal details and start journey with us</p>
+          <button class="ghost" id="signUp">Sign Up</button>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Auth JS -->
+  <script src="/static/js/auth.js"></script>
+
+
+</body>
+
+</html>
